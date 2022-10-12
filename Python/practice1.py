@@ -26,7 +26,7 @@ line0.set_global_opts(
     xaxis_opts=opts.AxisOpts(name='Year')
 )
 
-line0.render('Step Graph.html')
+line0.render(r'../Out/practice1/Step Graph.html')
 
 plt.figure(figsize=(12, 6))
 
@@ -77,7 +77,7 @@ line1.set_global_opts(
                              )
 )
 
-line1.render('Line Chart.html')
+line1.render(r'../Out/practice1/Line Chart.html')
 
 plt.figure(figsize=(14, 6))
 
@@ -146,7 +146,7 @@ line2.add_yaxis('Rate Line',
                 itemstyle_opts=opts.ItemStyleOpts(color='blue')
                 )
 
-s0.overlap(line2).render('Curve Fitting.html')
+s0.overlap(line2).render(r'../Out/practice1/Curve Fitting.html')
 
 # 3.3 离散型时间数据可视化
 
@@ -194,7 +194,7 @@ s1.set_global_opts(
     )
 )
 
-s1.render('Scatter Plot.html')
+s1.render(r'../Out/practice1/Scatter Plot.html')
 
 # - 3.3.2 柱形图
 
@@ -223,7 +223,7 @@ bar0.set_global_opts(
     yaxis_opts=opts.AxisOpts(name='Number')
 )
 
-bar0.render('Bar Chart.html')
+bar0.render(r'../Out/practice1/Bar Chart.html')
 
 plt.figure(figsize=(12, 6))
 
@@ -267,7 +267,7 @@ bar1.set_global_opts(
     yaxis_opts=opts.AxisOpts(name='Number')
 )
 
-bar1.render('Stack Graph.html')
+bar1.render(r'../Out/practice1/Stack Graph.html')
 
 plt.figure(figsize=(12, 6))
 
@@ -301,4 +301,5 @@ plt.bar(dataX6,
         )
 
 plt.legend()
+
 plt.show()
